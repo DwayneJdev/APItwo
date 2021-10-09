@@ -1,0 +1,7 @@
+body{
+    margin: auto;
+}
+.output{
+    columns: 3;
+    column-gap: 1px;;
+}
