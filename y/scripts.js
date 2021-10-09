@@ -14,7 +14,7 @@ let url = `https://api.giphy.com/v1/gifs/search`
 function goodFetch(g) {
        g.preventDefault();
 let input = document.getElementById('input').value.trim()
-       let searchUrl= `${url}?&api_key=${apiKey}&rating=pg&q=${input}&limit=20`
+       let searchUrl= `${url}?&api_key=${apiKey}&rating=pg&q=${input}&limit=40`
     
        fetch(searchUrl)
     .then(function (results) {
@@ -41,6 +41,7 @@ let input = document.getElementById('input').value.trim()
        outputs.src = gif.images.fixed_width.url;
       output.appendChild(outputs)
 
+        document.querySelector('#input').value=''
      })
     //  let outputs = document.createElement('img');
     //   outputs.src = content.data[0].images.downsized.url;
