@@ -14,7 +14,7 @@ let url = `https://api.giphy.com/v1/gifs/search`
 function goodFetch(g) {
        g.preventDefault();
 let input = document.getElementById('input').value.trim()
-       let searchUrl= `${url}?&api_key=${apiKey}&rating=pg&q=${input}&limit=15`
+       let searchUrl= `${url}?&api_key=${apiKey}&rating=pg&q=${input}&limit=20`
     
        fetch(searchUrl)
     .then(function (results) {
